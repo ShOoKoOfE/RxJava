@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RxJava</string>
+    <string name="createsingleobject">CreateSingleObject</string>
+    <string name="createmultiobject">CreateMultiObject And TakeWhile</string>
+    <string name="just">Just And Take</string>
+    <string name="range">Range</string>
+    <string name="repeat">Repeat</string>
+    <string name="interval">Interval</string>
+    <string name="timer">Timer</string>
+    <string name="fromarray">FromArray And Distinct</string>
+    <string name="fromirritable">FromIrritable And Filter</string>
+    <string name="fromcallable">FromCallable</string>
+    <string name="map">Map</string>
+</resources>

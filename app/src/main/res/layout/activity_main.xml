@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCreateSingleObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createsingleobject"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="createSingleObject">
+    </Button>
+
+    <Button
+        android:id="@+id/btnCreateMultiObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createmultiobject"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateSingleObject"
+        android:onClick="createMultiObject">
+    </Button>
+
+    <Button
+        android:id="@+id/btnJust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/just"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateMultiObject"
+        android:onClick="just">
+    </Button>
+
+    <Button
+        android:id="@+id/btnRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/range"
+        app:layout_constraintTop_toBottomOf="@+id/btnJust"
+        android:onClick="range">
+    </Button>
+
+    <Button
+        android:id="@+id/btnRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat"
+        app:layout_constraintTop_toBottomOf="@+id/btnRange"
+        android:onClick="repeat">
+    </Button>
+
+    <Button
+        android:id="@+id/btnInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interval"
+        app:layout_constraintTop_toBottomOf="@+id/btnRepeat"
+        android:onClick="interval">
+    </Button>
+
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterval"
+        android:onClick="timer">
+    </Button>
+
+    <Button
+        android:id="@+id/btnFromArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fromarray"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimer"
+        android:onClick="fromArray">
+    </Button>
+
+    <Button
+        android:id="@+id/btnFromIrritable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fromirritable"
+        app:layout_constraintTop_toBottomOf="@+id/btnFromArray"
+        android:onClick="fromIrritable">
+    </Button>
+
+    <Button
+        android:id="@+id/btnFromCallable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fromcallable"
+        app:layout_constraintTop_toBottomOf="@+id/btnFromIrritable"
+        android:onClick="fromCallable">
+    </Button>
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/map"
+        app:layout_constraintTop_toBottomOf="@+id/btnFromCallable"
+        android:onClick="map">
+    </Button>
+
+    <Button
+        android:id="@+id/btnBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buffer"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap"
+        android:onClick="buffer">
+    </Button>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuffer"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
